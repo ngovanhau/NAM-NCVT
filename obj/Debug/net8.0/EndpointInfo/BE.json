@@ -1,0 +1,684 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "BE",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/v1/R5PICKLISTS/GetPartNotInPickListByWo": {
+      "get": {
+        "tags": [
+          "R5PICKLISTS"
+        ],
+        "parameters": [
+          {
+            "name": "wo",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/R5PICKLISTS/CreatePartInPickList": {
+      "post": {
+        "tags": [
+          "R5PICKLISTS"
+        ],
+        "parameters": [
+          {
+            "name": "code",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "wo",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/R5PICKLISTS/GetAllKy": {
+      "get": {
+        "tags": [
+          "R5PICKLISTS"
+        ],
+        "parameters": [
+          {
+            "name": "currentpage",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "pagesize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Search",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/R5PICKLISTS/GetAllPerson": {
+      "get": {
+        "tags": [
+          "R5PICKLISTS"
+        ],
+        "parameters": [
+          {
+            "name": "currentpage",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "pagesize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Search",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "org",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/R5PICKLISTS/GetAllPhanLoai": {
+      "get": {
+        "tags": [
+          "R5PICKLISTS"
+        ],
+        "parameters": [
+          {
+            "name": "currentpage",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "pagesize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Search",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/R5PICKLISTS/GetAllStore": {
+      "get": {
+        "tags": [
+          "R5PICKLISTS"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/R5PICKLISTS/GetAllPickList": {
+      "get": {
+        "tags": [
+          "R5PICKLISTS"
+        ],
+        "parameters": [
+          {
+            "name": "currentpage",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "pagesize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Search",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/R5PICKLISTS/GetByWO": {
+      "get": {
+        "tags": [
+          "R5PICKLISTS"
+        ],
+        "parameters": [
+          {
+            "name": "pickticketnum",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/R5PICKLISTS/DeletePickList": {
+      "delete": {
+        "tags": [
+          "R5PICKLISTS"
+        ],
+        "parameters": [
+          {
+            "name": "pickticketnum",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/R5PICKLISTS/Create": {
+      "post": {
+        "tags": [
+          "R5PICKLISTS"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/R5PICKLISTSCreate"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/R5PICKLISTSCreate"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/R5PICKLISTSCreate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/R5PICKLISTS/Update": {
+      "put": {
+        "tags": [
+          "R5PICKLISTS"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/R5PICKLISTSUpdate"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/R5PICKLISTSUpdate"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/R5PICKLISTSUpdate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/R5PICKLISTS/GetAllPart": {
+      "get": {
+        "tags": [
+          "R5PICKLISTS"
+        ],
+        "parameters": [
+          {
+            "name": "currentpage",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "pagesize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Search",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/R5PICKLISTS/GetAllPartPopUp": {
+      "get": {
+        "tags": [
+          "R5PICKLISTS"
+        ],
+        "parameters": [
+          {
+            "name": "currentpage",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "pagesize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Search",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/R5PICKLISTS/GetPartByLine": {
+      "get": {
+        "tags": [
+          "R5PICKLISTS"
+        ],
+        "parameters": [
+          {
+            "name": "pickticketnum",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "line",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/R5PICKLISTS/CreatePart": {
+      "post": {
+        "tags": [
+          "R5PICKLISTS"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PartCreate"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PartCreate"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PartCreate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/R5PICKLISTS/UpdatePart": {
+      "put": {
+        "tags": [
+          "R5PICKLISTS"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PartCreate"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PartCreate"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PartCreate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/R5PICKLISTS/DeletePart": {
+      "delete": {
+        "tags": [
+          "R5PICKLISTS"
+        ],
+        "parameters": [
+          {
+            "name": "pickticketnum",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "line",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "PartCreate": {
+        "type": "object",
+        "properties": {
+          "pickticketnum": {
+            "type": "string",
+            "nullable": true
+          },
+          "wspf_10_pcv": {
+            "type": "string",
+            "nullable": true
+          },
+          "storeorg": {
+            "type": "string",
+            "nullable": true
+          },
+          "store": {
+            "type": "string",
+            "nullable": true
+          },
+          "line": {
+            "type": "string",
+            "nullable": true
+          },
+          "partdesc": {
+            "type": "string",
+            "nullable": true
+          },
+          "qty": {
+            "type": "string",
+            "nullable": true
+          },
+          "uom": {
+            "type": "string",
+            "nullable": true
+          },
+          "partcode": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "R5PICKLISTSCreate": {
+        "type": "object",
+        "properties": {
+          "org": {
+            "type": "string",
+            "nullable": true
+          },
+          "ngaybaocao": {
+            "type": "string",
+            "nullable": true
+          },
+          "loainhucau": {
+            "type": "string",
+            "nullable": true
+          },
+          "year": {
+            "type": "string",
+            "nullable": true
+          },
+          "quarter": {
+            "type": "string",
+            "nullable": true
+          },
+          "month": {
+            "type": "string",
+            "nullable": true
+          },
+          "ky": {
+            "type": "string",
+            "nullable": true
+          },
+          "canbophanxuong": {
+            "type": "string",
+            "nullable": true
+          },
+          "canbophongcodien": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "store": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "R5PICKLISTSUpdate": {
+        "type": "object",
+        "properties": {
+          "org": {
+            "type": "string",
+            "nullable": true
+          },
+          "pickticketstatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "pickticketstatus_display": {
+            "type": "string",
+            "nullable": true
+          },
+          "pickticketnum": {
+            "type": "string",
+            "nullable": true
+          },
+          "ngaybaocao": {
+            "type": "string",
+            "nullable": true
+          },
+          "loainhucau": {
+            "type": "string",
+            "nullable": true
+          },
+          "year": {
+            "type": "string",
+            "nullable": true
+          },
+          "quarter": {
+            "type": "string",
+            "nullable": true
+          },
+          "month": {
+            "type": "string",
+            "nullable": true
+          },
+          "ky": {
+            "type": "string",
+            "nullable": true
+          },
+          "canbophanxuong": {
+            "type": "string",
+            "nullable": true
+          },
+          "canbophongcodien": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "store": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "R5PICKLISTS"
+    }
+  ]
+}

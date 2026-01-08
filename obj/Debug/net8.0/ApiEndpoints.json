@@ -1,0 +1,348 @@
+[
+  {
+    "ContainingType": "BE.Controllers.R5PICKLISTSController",
+    "Method": "Create",
+    "RelativePath": "api/v1/R5PICKLISTS/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BE.Services.R5PICKLISTSCreate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE.Controllers.R5PICKLISTSController",
+    "Method": "CreatePart",
+    "RelativePath": "api/v1/R5PICKLISTS/CreatePart",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BE.Services.PartCreate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE.Controllers.R5PICKLISTSController",
+    "Method": "CreatePartInPickList",
+    "RelativePath": "api/v1/R5PICKLISTS/CreatePartInPickList",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "wo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE.Controllers.R5PICKLISTSController",
+    "Method": "DeletePart",
+    "RelativePath": "api/v1/R5PICKLISTS/DeletePart",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pickticketnum",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "line",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE.Controllers.R5PICKLISTSController",
+    "Method": "DeletePickList",
+    "RelativePath": "api/v1/R5PICKLISTS/DeletePickList",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pickticketnum",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE.Controllers.R5PICKLISTSController",
+    "Method": "GetKy",
+    "RelativePath": "api/v1/R5PICKLISTS/GetAllKy",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "currentpage",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pagesize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Search",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE.Controllers.R5PICKLISTSController",
+    "Method": "GetAllPart",
+    "RelativePath": "api/v1/R5PICKLISTS/GetAllPart",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "currentpage",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pagesize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Search",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE.Controllers.R5PICKLISTSController",
+    "Method": "GetAllPartPopUp",
+    "RelativePath": "api/v1/R5PICKLISTS/GetAllPartPopUp",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "currentpage",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pagesize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Search",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE.Controllers.R5PICKLISTSController",
+    "Method": "GetPhanLoai",
+    "RelativePath": "api/v1/R5PICKLISTS/GetAllPerson",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "currentpage",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pagesize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Search",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "org",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE.Controllers.R5PICKLISTSController",
+    "Method": "GetPhanLoai",
+    "RelativePath": "api/v1/R5PICKLISTS/GetAllPhanLoai",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "currentpage",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pagesize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Search",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE.Controllers.R5PICKLISTSController",
+    "Method": "GetAllPL",
+    "RelativePath": "api/v1/R5PICKLISTS/GetAllPickList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "currentpage",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pagesize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Search",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE.Controllers.R5PICKLISTSController",
+    "Method": "GetAllStore",
+    "RelativePath": "api/v1/R5PICKLISTS/GetAllStore",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE.Controllers.R5PICKLISTSController",
+    "Method": "GetByWO",
+    "RelativePath": "api/v1/R5PICKLISTS/GetByWO",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pickticketnum",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE.Controllers.R5PICKLISTSController",
+    "Method": "GetPartByLine",
+    "RelativePath": "api/v1/R5PICKLISTS/GetPartByLine",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pickticketnum",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "line",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE.Controllers.R5PICKLISTSController",
+    "Method": "GetPartNotInPickListByWo",
+    "RelativePath": "api/v1/R5PICKLISTS/GetPartNotInPickListByWo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "wo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE.Controllers.R5PICKLISTSController",
+    "Method": "Update",
+    "RelativePath": "api/v1/R5PICKLISTS/Update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BE.Services.R5PICKLISTSUpdate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BE.Controllers.R5PICKLISTSController",
+    "Method": "UpdatePart",
+    "RelativePath": "api/v1/R5PICKLISTS/UpdatePart",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BE.Services.PartCreate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
